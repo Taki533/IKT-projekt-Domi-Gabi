@@ -7,7 +7,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Image HorizontalAlignment="Left" Height="166" Margin="319,151,0,0" VerticalAlignment="Top" Width="244"/>
-
+        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="607,237,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
