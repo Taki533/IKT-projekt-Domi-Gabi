@@ -20,5 +20,10 @@ namespace keptablarazcucc
         {
             InitializeComponent();
         }
+
+        private void Xtext_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
