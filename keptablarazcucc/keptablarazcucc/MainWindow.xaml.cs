@@ -19,7 +19,7 @@ namespace keptablarazcucc
         public MainWindow()
         {
             InitializeComponent();
-            
+
         }
         
         private void Xtext_TextChanged(object sender, TextChangedEventArgs e)
@@ -141,13 +141,15 @@ namespace keptablarazcucc
 
 
         }
-
         private void gomb_Click(object sender, RoutedEventArgs e)
         {
             canvas.Children.Clear();
             koordRendszer();
         }
 
-        
+        private void canvas_loaded(object sender, RoutedEventArgs e)
+        {
+            koordRendszer();
+        }
     }
 }
