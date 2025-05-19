@@ -28,7 +28,37 @@ namespace keptablarazcucc
 
         private void alakvalasztas_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            
+            //Háromszőg = X, Y, Magasság,    Négyzet= X,Y Átló     Kör= X,Y Sugár       Vonal=X,Y  index0=haromszog   index1=negyzet  index2=vonal   index3=kör
+
+            if (alakvalasztas.SelectedIndex == 0) 
+            {
+                R.Content = "Magasság:";
+                Rtext.Visibility = Visibility.Visible;
+                R.Visibility = Visibility.Visible;
+
+            }
+            else if (alakvalasztas.SelectedIndex == 1)
+            {
+                R.Content = "Átló:";
+                Rtext.Visibility = Visibility.Visible;
+                R.Visibility = Visibility.Visible;
+            }
+
+            else if (alakvalasztas.SelectedIndex == 3)
+            {
+                R.Content = "Sugár:";
+                Rtext.Visibility = Visibility.Visible;
+                R.Visibility= Visibility.Visible;
+            }
+            else if (alakvalasztas.SelectedIndex == 2)
+            {
+                Rtext.Visibility = Visibility.Hidden;
+                R.Visibility = Visibility.Hidden;
+            }
+
+
+
+
         }
     }
 }
