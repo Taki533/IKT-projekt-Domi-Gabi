@@ -149,7 +149,20 @@ namespace keptablarazcucc
 
         private void canvas_loaded(object sender, RoutedEventArgs e)
         {
+            
             koordRendszer();
+        }
+
+        void feketePont()
+        {
+            Ellipse kor= new Ellipse();
+            kor.Stroke= Brushes.Black;
+            kor.Width = int.Parse(Rtext.Text);
+            kor.Height = int.Parse(Rtext.Text);
+            kor.Fill = Brushes.Black;
+
+
+
         }
     }
 }
