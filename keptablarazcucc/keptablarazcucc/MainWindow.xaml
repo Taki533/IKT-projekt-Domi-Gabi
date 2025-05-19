@@ -21,9 +21,9 @@
         <Label x:Name="X1" Content="X" HorizontalAlignment="Left" Margin="42,128,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Bahnschrift SemiBold Condensed"/>
         <TextBox x:Name="Ytext" HorizontalAlignment="Left" Height="36" Margin="42,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" FontSize="20"/>
         <Label x:Name="Y" Content="Y" HorizontalAlignment="Left" Margin="42,203,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Bahnschrift SemiBold Condensed"/>
-        <Button x:Name="gomb" Content="Megjelenítés" HorizontalAlignment="Left" Margin="42,366,0,0" Width="176" Height="45" VerticalAlignment="Top"/>
+        <Button x:Name="gomb" Content="Megjelenítés" HorizontalAlignment="Left" Margin="42,366,0,0" Width="176" Height="45" VerticalAlignment="Top" Click="gomb_Click"/>
 
-        <Canvas HorizontalAlignment="Left" Height="356" Margin="309,34,0,0" VerticalAlignment="Top" Width="444" Background="#FFABABAB"/>
+        <Canvas x:Name="canvas" HorizontalAlignment="Left" Height="356" Margin="309,34,0,0" VerticalAlignment="Top" Width="444" Background="#FFABABAB"/>
         <Rectangle HorizontalAlignment="Left" Height="356" Margin="309,34,0,0" Stroke="Black" VerticalAlignment="Top" Width="444" StrokeThickness="3"/>
 
     </Grid>

@@ -144,5 +144,7 @@ namespace keptablarazcucc
         {
             koordRendszer();
         }
+
+        
     }
 }
