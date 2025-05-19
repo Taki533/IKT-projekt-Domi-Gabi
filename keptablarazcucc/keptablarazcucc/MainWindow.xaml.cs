@@ -20,5 +20,15 @@ namespace keptablarazcucc
         {
             InitializeComponent();
         }
+
+        private void Xtext_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void alakvalasztas_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            
+        }
     }
 }
