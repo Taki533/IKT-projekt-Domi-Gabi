@@ -60,5 +60,89 @@ namespace keptablarazcucc
 
 
         }
+        int r = 0;
+        int origoX = 222;
+        int origoY = 178;
+        void koordRendszer()
+        {
+            //MessageBox.Show(Convert.ToString(canvas.ActualWidth),Convert.ToString(canvas.ActualHeight));
+            Line xTengely = new Line();
+            Line yTengely = new Line();
+
+            xTengely.Stroke = Brushes.Black;
+            yTengely.Stroke = Brushes.Black;
+
+            xTengely.X1 = 0;
+            xTengely.Y1 = origoY;
+            xTengely.X2 = canvas.ActualWidth;
+            xTengely.Y2 = origoY;
+
+            yTengely.X1 = origoX;
+            yTengely.Y1 = 0;
+            yTengely.X2 = origoX;
+            yTengely.Y2 = canvas.ActualHeight;
+
+
+
+            canvas.Children.Add(xTengely);
+            canvas.Children.Add(yTengely);
+
+            for (int i = 0; i < canvas.ActualWidth/2; i += 30)
+            {
+                Line vonas = new Line();
+                vonas.Stroke = Brushes.Black;
+                vonas.X1 = origoX + i;
+                vonas.Y1 = origoY - 5;
+                vonas.X2 = origoX + i;
+                vonas.Y2 = origoY + 5;
+
+                canvas.Children.Add(vonas);
+            }
+      
+
+            for (int i = 0; i < origoX; i += 30)
+            {
+                
+                Line vonas = new Line();
+                vonas.Stroke = Brushes.Black;
+                vonas.X1 = origoX - i;
+                vonas.Y1 = origoY - 5;
+                vonas.X2 = origoX - i;
+                vonas.Y2 = origoY + 5;
+
+                canvas.Children.Add(vonas);
+            }
+            for (double i = -1; i <= canvas.ActualHeight/2; i +=30)
+            {
+                Line vonas = new Line();
+                vonas.Stroke = Brushes.Black;
+                vonas.X1 = origoX - 5;
+                vonas.Y1 = origoY + i;
+                vonas.X2 = origoX + 5;
+                vonas.Y2 = origoY + i;
+
+                canvas.Children.Add(vonas);
+            }
+            for (double i = 0; i <= canvas.ActualHeight/2; i += 30)
+            {
+                
+                Line vonas = new Line();
+                vonas.Stroke = Brushes.Black;
+                vonas.X1 = origoX - 5;
+                vonas.Y1 = origoY - i;
+                vonas.X2 = origoX + 5;
+                vonas.Y2 = origoY - i;
+
+                canvas.Children.Add(vonas);
+            }
+
+
+
+        }
+
+        private void gomb_Click(object sender, RoutedEventArgs e)
+        {
+            koordRendszer();
+        }
     }
 }
