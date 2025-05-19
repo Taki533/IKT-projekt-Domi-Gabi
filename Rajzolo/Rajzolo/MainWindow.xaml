@@ -6,7 +6,5 @@
         xmlns:local="clr-namespace:Rajzolo"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Label Content="pocs" HorizontalAlignment="Left" Margin="261,157,0,0" VerticalAlignment="Top" Height="189" Width="358" FontSize="72"/>
-    </Grid>
+    <Grid/>
 </Window>
