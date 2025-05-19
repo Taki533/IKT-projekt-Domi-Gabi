@@ -8,4 +8,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="big-steve-face.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="big-steve-face.png" />
+  </ItemGroup>
+
 </Project>
