@@ -9,7 +9,7 @@
     <Grid>
         <Rectangle HorizontalAlignment="Left" Height="414" Margin="10,0,0,0" VerticalAlignment="Center" Width="241" Stroke="Black" Fill="#FF428CA0" RadiusX="20.322" RadiusY="20.322" StrokeThickness="5"/>
         <Label x:Name="alakzat" Content="Válassz Alakzatot:" HorizontalAlignment="Left" Height="38" Margin="42,34,0,0" VerticalAlignment="Top" Width="186" FontSize="24" FontFamily="Bahnschrift SemiBold SemiCondensed"/>
-        <ComboBox x:Name="alakvalasztas" HorizontalAlignment="Left" Height="37" Margin="42,77,0,0" VerticalAlignment="Top" Width="176" SelectedIndex="1" FontSize="22">
+        <ComboBox x:Name="alakvalasztas" HorizontalAlignment="Left" Height="37" Margin="42,77,0,0" VerticalAlignment="Top" Width="176" SelectedIndex="2" FontSize="22" SelectionChanged="alakvalasztas_SelectionChanged">
             <ComboBoxItem Content="Háromszög" FontSize="22"/>
             <ComboBoxItem Content="Négyzet"/>
             <ComboBoxItem Content="Vonal" FontSize="22"/>
@@ -20,8 +20,8 @@
         <TextBox x:Name="Ytext" HorizontalAlignment="Left" Height="36" Margin="42,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" FontSize="20"/>
         <Label x:Name="Y" Content="Y" HorizontalAlignment="Left" Margin="42,203,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Bahnschrift SemiBold Condensed"/>
         <Button x:Name="gomb" Content="Megjelenítés" HorizontalAlignment="Left" Height="49" Margin="42,366,0,0" VerticalAlignment="Top" Width="176"/>
-        <TextBox x:Name="Rtext" HorizontalAlignment="Left" Height="36" Margin="42,312,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" FontSize="20"/>
-        <Label x:Name="R" Content="R" HorizontalAlignment="Left" Margin="42,278,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Bahnschrift SemiBold Condensed"/>
+        <TextBox x:Name="Rtext" HorizontalAlignment="Left" Height="36" Margin="42,312,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" FontSize="20" SelectionOpacity="-2" Visibility="Hidden"/>
+        <Label x:Name="R" Content="R" HorizontalAlignment="Left" Margin="42,278,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Bahnschrift SemiBold Condensed" Visibility="Hidden"/>
         <Canvas HorizontalAlignment="Left" Height="356" Margin="309,34,0,0" VerticalAlignment="Top" Width="444" Background="#FFABABAB"/>
         <Rectangle HorizontalAlignment="Left" Height="356" Margin="309,34,0,0" Stroke="Black" VerticalAlignment="Top" Width="444" StrokeThickness="3"/>
 

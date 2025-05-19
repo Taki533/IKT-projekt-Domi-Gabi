@@ -25,5 +25,10 @@ namespace keptablarazcucc
         {
 
         }
+
+        private void alakvalasztas_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            
+        }
     }
 }
