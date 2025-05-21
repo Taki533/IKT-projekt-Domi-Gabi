@@ -156,13 +156,14 @@ namespace keptablarazcucc
 
         void feketePont()
         {
+            r = int.Parse(Rtext.Text);
             Ellipse kor= new Ellipse();
             kor.Stroke= Brushes.Black;
             kor.Width = int.Parse(Rtext.Text);
             kor.Height = int.Parse(Rtext.Text);
             kor.Fill = Brushes.Black;
-            double dX = Math.Cos(Convert.ToDouble(Xtext.Text) / 180.0 * Math.PI) * r;
-            kor.Margin = new Thickness(origoX + int.Parse(Xtext.Text) - dX -r , origoY-(int.Parse(Ytext.Text)),0,0);
+            double dX = Math.Cos(origoX+Convert.ToInt32(Xtext.Text) / 180.0 * Math.PI)* r;
+            kor.Margin = new Thickness(origoX + int.Parse(Xtext.Text) - dX -r , origoY-(int.Parse(Ytext.Text))-r,0,0);
 
             canvas.Children.Add(kor);
 
