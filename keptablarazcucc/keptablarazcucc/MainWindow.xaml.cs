@@ -145,7 +145,10 @@ namespace keptablarazcucc
         {
             canvas.Children.Clear();
             koordRendszer();
-            feketePont();
+            if (alakvalasztas.SelectedIndex == 3)
+            {
+                feketeKor();
+            }
         }
 
         private void canvas_loaded(object sender, RoutedEventArgs e)
@@ -154,17 +157,18 @@ namespace keptablarazcucc
             koordRendszer();
         }
 
-        void feketePont()
+        void feketeKor()
         {
+
+
             r = int.Parse(Rtext.Text);
             Ellipse kor= new Ellipse();
             kor.Stroke= Brushes.Black;
-            kor.Width = int.Parse(Rtext.Text);
-            kor.Height = int.Parse(Rtext.Text);
+            kor.Width = int.Parse(Rtext.Text)*2;
+            kor.Height = int.Parse(Rtext.Text)*2;
             kor.Fill = Brushes.Black;
             double dX = Math.Cos(origoX+Convert.ToInt32(Xtext.Text) / 180.0 * Math.PI)* r;
-            kor.Margin = new Thickness(origoX + int.Parse(Xtext.Text) - dX -r , origoY-(int.Parse(Ytext.Text))-r,0,0);
-
+            kor.Margin = new Thickness(origoX + int.Parse(Xtext.Text) - r, origoY - (int.Parse(Ytext.Text)) - r, 0, 0);
             canvas.Children.Add(kor);
 
         }
